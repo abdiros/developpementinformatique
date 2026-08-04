@@ -1,15 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Info, Shield, Mail, Moon, Sun } from 'lucide-react';
+import { Code, Info, Shield, Mail, Moon, Sun, Sparkles, Bell, Megaphone, AlertCircle, Gift, Flame } from 'lucide-react';
 
 interface HeaderProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
 
+// =========================================================================
+// 🔔 CONFIGURATION DE LA NOTIFICATION SUPERIEURE
+// - `enabled`: true pour afficher, false pour masquer.
+// - `message`: Votre texte de notification.
+// - `icon`: Choisissez parmi: "sparkles" | "bell" | "megaphone" | "info" | "alert" | "gift" | "flame"
+// =========================================================================
+const NOTIFICATION_CONFIG = {
+  enabled: true, // true = Activé, false = Désactivé
+  message: "Les leçons seront mises en ligne prochainement.", // Message de notification
+  icon: "bell" as "sparkles" | "bell" | "megaphone" | "info" | "alert" | "gift" | "flame",
+};
+
+const renderNotificationIcon = (iconName: string) => {
+  const props = { size: 14, className: "text-amber-300 shrink-0 animate-pulse" };
+  switch (iconName) {
+    case "bell": return <Bell {...props} />;
+    case "megaphone": return <Megaphone {...props} />;
+    case "info": return <Info {...props} />;
+    case "alert": return <AlertCircle {...props} />;
+    case "gift": return <Gift {...props} />;
+    case "flame": return <Flame {...props} />;
+    case "sparkles":
+    default:
+      return <Sparkles {...props} />;
+  }
+};
+
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm transition-colors duration-300 dark:bg-slate-900/80 dark:border-slate-800">
+      {/* Top Banner Notification */}
+      {NOTIFICATION_CONFIG.enabled && (
+        <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 text-white text-xs py-1.5 px-4 text-center font-medium flex items-center justify-center gap-2 border-b border-blue-500/20">
+          {renderNotificationIcon(NOTIFICATION_CONFIG.icon)}
+          <span>{NOTIFICATION_CONFIG.message}</span>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group mr-2">
@@ -23,18 +58,18 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
 
         {/* Navigation - Visible icons on mobile, text on desktop */}
         <nav className="flex items-center gap-3 sm:gap-6">
-          <a href="#" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
+          <Link to="/about" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
             <Info size={18} strokeWidth={2.5} />
             <span className="hidden md:inline">À propos</span>
-          </a>
-          <a href="#" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
+          </Link>
+          <Link to="/privacy" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
             <Shield size={18} strokeWidth={2.5} />
             <span className="hidden md:inline">Confidentialité</span>
-          </a>
-          <a href="#" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
+          </Link>
+          <Link to="/contact" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full sm:hover:bg-transparent sm:p-0">
             <Mail size={18} strokeWidth={2.5} />
             <span className="hidden md:inline">Contact</span>
-          </a>
+          </Link>
           
           <div className="h-5 w-px bg-gray-200 dark:bg-slate-700 mx-1 hidden sm:block"></div>
 

@@ -4,6 +4,10 @@ import Home from './components/Home';
 import YearDashboard from './components/YearDashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import About from './components/About';
+import Privacy from './components/Privacy';
+import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   // Initialize state from localStorage if available
@@ -26,6 +30,7 @@ const App: React.FC = () => {
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 flex flex-col font-sans transition-colors duration-300">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         
@@ -33,6 +38,9 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/year/:yearId" element={<YearDashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 

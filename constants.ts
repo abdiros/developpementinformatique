@@ -7,9 +7,9 @@ export const MODULES: ModuleData[] = [
   {
     id: 'm101',
     code: 'M101',
-    title: 'Se situer au regard du métier et de la démarche de formation',
+    title: 'Python',
     year: 1,
-    counts: { cours: 2, exercices: 1 }
+    counts: { cours: 4, exercices: 4 }
   },
 
   // 2ème Année - Développement
@@ -18,7 +18,7 @@ export const MODULES: ModuleData[] = [
     code: 'M201',
     title: "Développement Back-end avancé (PHP/Laravel)",
     year: 2,
-    counts: { cours: 1, exercices: 1 }
+    counts: { cours: 0, exercices: 0 }
   },
   
 ];
@@ -46,11 +46,16 @@ export const CUSTOM_RESOURCES: Record<string, Partial<Record<CategoryType, Custo
   // ==========================================
   "M101": {
     cours: [
-      { title: "Chapitre 1 : Introduction à l'algorithmique", url: "#", size: "1.5 MB", date: "15 Sept 2023" },
-      { title: "Chapitre 2 : Les variables et types", url: "#", size: "1.2 MB", date: "20 Sept 2023" },
+      { title: "Python : Introduction", url: "https://drive.google.com/file/d/1bHQqQJjj__YNN_C99NNpUzkRVgkNu1xg/view?usp=drive_open", size: "2 KB", date: "27 Juil 2023" },
+      { title: "Python : Variables", url: "#", size: "1.5 MB", date: "15 Sept 2023" },
+      { title: "Python : Operators", url: "#", size: "1.5 MB", date: "15 Sept 2023" },
+      { title: "Python : Strings", url: "#", size: "1.5 MB", date: "15 Sept 2023" },
     ],
     exercices: [
-      { title: "Série d'exercices N°1 - Variables", url: "#", size: "0.4 MB", date: "18 Sept 2023" }
+      { title: "Série d'exercices N°1 - Introduction", url: "#", size: "0.4 MB", date: "18 Sept 2023" },
+      { title: "Série d'exercices N°2 - Operators", url: "#", size: "0.4 MB", date: "18 Sept 2023" },
+      { title: "Série d'exercices N°3 - Variables", url: "#", size: "0.4 MB", date: "18 Sept 2023" },
+      { title: "Série d'exercices N°4 - Strings", url: "#", size: "0.4 MB", date: "18 Sept 2023" },
     ]
   },
 

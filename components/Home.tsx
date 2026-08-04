@@ -20,12 +20,12 @@ const Home: React.FC = () => {
         Développement Informatique
       </h1>
       <h2 className="text-xl sm:text-2xl font-semibold text-slate-700 dark:text-slate-300 text-center mb-6">
-       by AbderrazzaQ
+       AR WEB SOLUTIONS
       </h2>
 
       <div className="max-w-2xl mx-auto text-center mb-12 space-y-4">
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-          Plateforme éducative complète pour les étudiants de la filière Développement Informatique OFPPT - Cours, exercices et projets.
+          Plateforme éducative complète pour les étudiants de la filière Développement Informatique OFPPT/EFP... - Cours, exercices et projets.
         </p>
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed hidden sm:block">
           Cette plateforme a été créée pour être une bibliothèque numérique centralisée, offrant un accès facile et gratuit à toutes les ressources pédagogiques.
