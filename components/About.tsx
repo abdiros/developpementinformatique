@@ -74,9 +74,9 @@ const About: React.FC = () => {
             <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4 opacity-10">
               <Award size={150} />
             </div>
-            <h3 className="text-lg font-bold mb-2">Conçu par AR WEB SOLUTIONS</h3>
+            <h3 className="text-lg font-bold mb-2">Conçu par DEV WEB SOLUTIONS</h3>
             <p className="text-sm text-blue-100 leading-relaxed mb-4">
-              Créé avec passion par <strong>arwebsol</strong> pour soutenir et accompagner la communauté des futurs développeurs du Maroc.
+              Créé avec passion par <strong>devwebsol</strong> pour soutenir et accompagner la communauté des futurs développeurs du Maroc.
             </p>
             <div className="border-t border-white/20 pt-4 flex justify-between items-center text-xs text-blue-100">
               <span>Mise à jour</span>

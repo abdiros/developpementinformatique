@@ -189,7 +189,7 @@ const Contact: React.FC = () => {
                   Branding
                 </h4>
                 <p className="text-xs text-slate-300 font-mono">
-                  AR WEB SOLUTIONS solutions éducatives
+                  DEV WEB SOLUTIONS solutions éducatives
                 </p>
               </div>
             </div>

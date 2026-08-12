@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         Développement Informatique
       </h1>
       <h2 className="text-xl sm:text-2xl font-semibold text-slate-700 dark:text-slate-300 text-center mb-6">
-       AR WEB SOLUTIONS
+       DEV WEB SOLUTIONS
       </h2>
 
       <div className="max-w-2xl mx-auto text-center mb-12 space-y-4">

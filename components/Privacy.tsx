@@ -27,7 +27,7 @@ const Privacy: React.FC = () => {
             <span>1. Introduction</span>
           </div>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-            Chez <strong>Développement Informatique (par AR WEB SOLUTIONS)</strong>, nous accordons une grande importance à la protection de la vie privée de nos utilisateurs. Cette Politique de Confidentialité décrit comment nous traitons vos informations lorsque vous utilisez notre site web.
+            Chez <strong>Développement Informatique (par DEV WEB SOLUTIONS)</strong>, nous accordons une grande importance à la protection de la vie privée de nos utilisateurs. Cette Politique de Confidentialité décrit comment nous traitons vos informations lorsque vous utilisez notre site web.
           </p>
         </div>
 
@@ -82,10 +82,10 @@ const Privacy: React.FC = () => {
             Si vous avez des questions concernant cette politique de confidentialité ou l'utilisation du site, vous pouvez nous écrire à l'adresse e-mail suivante :
           </p>
           <a 
-            href="mailto:arwebsolutuions@gmail.com" 
+            href="mailto:devwebsolutuions@gmail.com" 
             className="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm transition-colors"
           >
-          arwebsolutions@gmail.com
+          devwebsolutions@gmail.com
           </a>
         </div>
 
