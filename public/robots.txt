@@ -1,0 +1,7 @@
+# robots.txt for DEV WEB SOLUTIONS
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.devwebsol.com/sitemap.xml

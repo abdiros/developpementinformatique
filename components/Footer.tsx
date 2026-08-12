@@ -21,15 +21,15 @@ const Footer: React.FC = () => {
 
           {/* Socials */}
           <div className="flex gap-4 justify-center">
-            <SocialIcon href="https://www.facebook.com/arwebsol" label="Facebook">
+            <SocialIcon href="https://www.facebook.com/devwebsol" label="Facebook">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </SocialIcon>
-            <SocialIcon href="https://www.instagram.com/arwebsol" label="Instagram">
+            <SocialIcon href="https://www.instagram.com/devwebsol" label="Instagram">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </SocialIcon>
-            <SocialIcon href="https://www.youtube.com/@arwebsol" label="YouTube">
+            <SocialIcon href="https://www.youtube.com/@devwebsol" label="YouTube">
               <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
               <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
             </SocialIcon>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
            <p className="text-xs text-slate-400 dark:text-slate-500 text-center sm:text-left">
-             &copy; {new Date().getFullYear()} Tous droits réservés by @arwebsol.
+             &copy; {new Date().getFullYear()} Tous droits réservés by @devwebsol.
            </p>
            <div className="flex gap-6 text-xs text-slate-400 dark:text-slate-500">
              <Link to="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">À propos</Link>

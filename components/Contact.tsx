@@ -168,11 +168,11 @@ const Contact: React.FC = () => {
             </p>
             
             <a 
-              href="mailto:arwebsolutions@gmail.com"
+              href="mailto:devwebsolutions@gmail.com"
               className="flex items-center gap-3 p-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-blue-300 hover:text-blue-200 font-semibold text-sm transition-all border border-slate-700/50 mb-6"
             >
               <Mail size={18} className="text-blue-400 shrink-0" />
-              <span className="truncate">arwebsolutions@gmail.com</span>
+              <span className="truncate">devwebsolutions@gmail.com</span>
             </a>
 
             <div className="border-t border-slate-800 pt-6 space-y-4">
