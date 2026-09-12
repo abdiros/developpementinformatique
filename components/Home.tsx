@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GraduationCap, BookOpen, PenTool, Laptop, Database } from 'lucide-react';
+import NewsPostsSection from './NewsPostsSection';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -79,6 +80,9 @@ const Home: React.FC = () => {
           </h3>
         </div>
       </div>
+
+      {/* News Posts Section - 3 categories (Python, Algo, Projet), 2x2 grid & circular pagination */}
+      <NewsPostsSection />
 
     </div>
   );

@@ -36,3 +36,19 @@ export interface CustomResource {
   size?: string;
   date?: string;
 }
+
+export type PostCategory = 'python' | 'algo' | 'projet';
+
+export interface NewsPost {
+  id?: string;
+  title: string;
+  category: PostCategory;
+  imageUrl: string;
+  sourceUrl: string;
+  source?: string;
+  date?: string;
+  summary?: string;
+  content?: string;
+  readTime?: string;
+  author?: string;
+}
